@@ -6,8 +6,8 @@
   <p><b>Engineering the Next Generation of Autonomous Living Spaces</b></p>
 
   <p>
-    <a href="https://vinhomes.vn"><img src="https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=vercel&logoColor=00E5FF" alt="Website" /></a>
-    <a href="#"><img src="https://img.shields.io/badge/Documentation-0D1117?style=for-the-badge&logo=readthedocs&logoColor=00E5FF" alt="Docs" /></a>
+    <a href="https://vinhomes.co.uk"><img src="https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=vercel&logoColor=00E5FF" alt="Website" /></a>
+    <a href="#"><img src="https:/img.shields.io/badge/Documentation-0D1117?style=for-the-badge&logo=readthedocs&logoColor=00E5FF" alt="Docs" /></a>
     <a href="#"><img src="https://img.shields.io/badge/System_Status-Operational-0D1117?style=for-the-badge&labelColor=000000&color=00E5FF" alt="Status" /></a>
   </p>
 </div>
