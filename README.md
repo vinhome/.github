@@ -1,6 +1,6 @@
 <div align="center">
   <!-- Thay đường dẫn ảnh bên dưới bằng đường dẫn tới file vinhomes_logo_full.svg hoặc banner trong repo của bạn -->
-  <img src="./assets/vinhomes_logo_full.svg" alt="Vinhomes Home Automation Logo" width="220" />
+  <img src="./assets/logo_vinhome.svg" alt="Vinhomes Home Automation Logo" width="220" />
 
   <h1>VINHOMES HOME AUTOMATION</h1>
   <p><b>Engineering the Next Generation of Autonomous Living Spaces</b></p>
