@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- Dark Tech Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#1c2026"/>
+      <stop offset="100%" stop-color="#0a0c0e"/>
+    </radialGradient>
+
+    <!-- Brushed Metallic Silver Gradient -->
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#d0d7de"/>
+      <stop offset="75%" stop-color="#8c959f"/>
+      <stop offset="100%" stop-color="#eaeef2"/>
+    </linearGradient>
+
+    <!-- SpaceX-style Cyan Orbital Gradient -->
+    <linearGradient id="cyanGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0077ff"/>
+      <stop offset="50%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#99f6ff"/>
+    </linearGradient>
+
+    <!-- Neon Cyan Glow -->
+    <filter id="cyanGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur1"/>
+      <feGaussianBlur stdDeviation="3" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft Elevation Shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1000" fill="url(#bgGrad)"/>
+
+  <!-- ================= LOGO ICON (V + Smart Home + Orbit) ================= -->
+  <g transform="translate(0, -15)" filter="url(#shadow)">
+    <!-- Smart Home Roof & Chimney -->
+    <path d="M 512 332 L 555 289 L 555 242 L 573 242 L 573 271 L 614 230 L 672 288 L 657 303 L 614 260 L 527 347 Z" 
+          fill="url(#silverGrad)"/>
+
+    <!-- Double-lined Geometric V with SpaceX Wing Extension -->
+    <path d="M 330 278 L 400 278 L 496 485 L 578 312 L 616 297 L 503 536 L 489 536 L 384 306 L 364 306 L 478 560 L 514 560 L 622 336 C 646 292, 688 276, 752 260 C 704 290, 668 314, 644 356 L 528 588 L 464 588 L 330 278 Z" 
+          fill="url(#silverGrad)"/>
+
+    <!-- Orbital Automation Swoosh -->
+    <path d="M 386 432 C 318 482, 312 522, 396 494 C 488 462, 614 362, 768 282 C 632 328, 482 432, 396 476 C 344 496, 348 472, 394 439 Z" 
+          fill="url(#cyanGrad)" filter="url(#cyanGlow)"/>
+
+    <!-- Automation IoT Node & Signal Trace -->
+    <line x1="452" y1="378" x2="492" y2="342" stroke="#00e5ff" stroke-width="5" stroke-linecap="round" filter="url(#cyanGlow)"/>
+    <circle cx="492" cy="342" r="15" fill="#00f0ff" filter="url(#cyanGlow)"/>
+    <circle cx="492" cy="342" r="7" fill="#ffffff"/>
+  </g>
+
+  <!-- ================= WORDMARK: VINHOMES (Pure Vector Paths) ================= -->
+  <g fill="url(#silverGrad)" filter="url(#shadow)" transform="translate({start_x}, 15)">
+    <!-- V (0..96) -->
+    <path d="M 0 630 L 16 630 L 48 704 L 80 630 L 96 630 L 55 720 L 41 720 Z"/>
+    <!-- I (120..134) -->
+    <path d="M 120 630 L 134 630 L 134 720 L 120 720 Z"/>
+    <!-- N (158..236) -->
+    <path d="M 158 630 L 172 630 L 222 696 L 222 630 L 236 630 L 236 720 L 222 720 L 172 654 L 172 720 L 158 720 Z"/>
+    <!-- H (260..336, futuristic detached crossbar) -->
+    <path d="M 260 630 L 274 630 L 274 720 L 260 720 Z M 322 630 L 336 630 L 336 720 L 322 720 Z M 282 669 L 322 669 L 322 681 L 282 681 Z"/>
+    <!-- O (360..458) -->
+    <path d="M 409 628 C 440 628, 458 647, 458 675 C 458 703, 440 722, 409 722 C 378 722, 360 703, 360 675 C 360 647, 378 628, 409 628 Z M 409 641 C 387 641, 375 655, 375 675 C 375 695, 387 709, 409 709 C 431 709, 443 695, 443 675 C 443 655, 431 641, 409 641 Z"/>
+    <!-- M (482..572) -->
+    <path d="M 482 630 L 497 630 L 527 684 L 557 630 L 572 630 L 572 720 L 558 720 L 558 655 L 532 700 L 522 700 L 496 655 L 496 720 L 482 720 Z"/>
+    <!-- E (596..664, SpaceX 3 horizontal bars) -->
+    <path d="M 596 630 L 664 630 L 664 642 L 596 642 Z M 596 669 L 652 669 L 652 681 L 596 681 Z M 596 708 L 664 708 L 664 720 L 596 720 Z"/>
+    <!-- S (688..764) -->
+    <path d="M 692 704 C 704 709, 718 710, 730 709 C 742 707, 749 701, 749 694 C 749 686, 741 682, 722 680 C 698 677, 688 669, 688 653 C 688 637, 704 628, 729 628 C 743 628, 755 631, 763 635 L 758 647 C 749 642, 739 640, 729 640 C 712 640, 703 645, 703 652 C 703 660, 710 664, 730 666 C 753 669, 764 677, 764 693 C 764 710, 748 722, 721 722 C 706 722, 693 719, 685 715 Z"/>
+  </g>
+
+  <!-- ================= SUBTITLE: HOME AUTOMATION ================= -->
+  <text x="500" y="795" 
+        font-family="'Montserrat', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" 
+        font-size="28" 
+        font-weight="500" 
+        fill="#cfd6de" 
+        letter-spacing="14" 
+        text-anchor="middle" 
+         opacity="0.9">HOME AUTOMATION</text>
+</svg>
